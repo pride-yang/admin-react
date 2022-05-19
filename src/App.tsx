@@ -6,7 +6,7 @@ const App = () => {
   return (
     <Suspense>
       <Routes>
-        <Route path="" element={<NotFound404 />}></Route>
+        <Route path="*" element={<NotFound404 />}></Route>
       </Routes>
     </Suspense>
   )
