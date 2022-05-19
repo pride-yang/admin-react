@@ -1,30 +1,30 @@
 const plugins = [
   [
-    "import",
+    'import',
     {
-      libraryName: "antd",
-      libraryDirectory: "es",
+      libraryName: 'antd',
+      libraryDirectory: 'es',
       style: true,
     },
   ],
-  ["@babel/plugin-syntax-dynamic-import"],
-  ["@babel/plugin-transform-runtime"],
-];
+  ['@babel/plugin-syntax-dynamic-import'],
+  ['@babel/plugin-transform-runtime'],
+]
 
 module.exports = {
   presets: [
-    "@babel/preset-env",
+    '@babel/preset-env',
     [
-      "@babel/preset-react",
+      '@babel/preset-react',
       {
-        runtime: "automatic",
+        runtime: 'automatic',
       },
     ],
-    "@babel/typescript",
+    '@babel/typescript',
   ],
   // compact: true,
   plugins:
-    process.env.NODE_ENV === "production"
-      ? [...plugins, "transform-remove-console", "transform-remove-debugger"]
+    process.env.NODE_ENV === 'production'
+      ? [...plugins, 'transform-remove-console', 'transform-remove-debugger']
       : plugins,
-};
+}

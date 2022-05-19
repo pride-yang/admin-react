@@ -35,6 +35,7 @@
         "endOfLine": "auto"
       }
     ],
+    "arrow-body-style": "off",
     "semi": "off",
     "no-use-before-define": "off",
     "comma-dangle": "off",

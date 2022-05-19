@@ -5,6 +5,7 @@
   "singleQuote": true,
   "arrowParens": "always",
   "proseWrap": "preserve",
+  "parser": "flow",
   "useTabs": false,
   "tabWidth": 2
 }
